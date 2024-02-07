@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WAREHOUSE Management</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="js/admin.js"></script>
+  </head>
+
+<body>
+
+
+  
+  <header>
+    <nav class="navbar bg-dark border-bottom fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1"><a href="./index.html"><img src="media/warehouse_banner 2.png" alt="Logo" width="65" height="25"></a><span class="px-4"> </span>Warehouse Management
+      </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+           <div class="navbar-nav">
+            <a class="nav-link" href="/index.html#home">Home</a>
+            <a class="nav-link" aria-current="page" href="./admin.html">Admin</a>
+           </div>
+         </div>
+       </div>
+     </nav>
+  </header>
+
+  <div class="separator"></div>
+  <hr/>
+
+  <div class="d-flex justify-content-center">
+<fieldset>
+  <legend class="h4 mx-4 justify-content-center">New Product</legend>
+    <input class="mx-1" placeholder="name" id="name" />
+    <input class="mx-1" name="description" placeholder="description" id="description">
+    <input class="mx-1" name="quantity" placeholder="quantity" id="quantity">
+    <input class="mx-1" name="price" placeholder="price" id="price">
+    <input class="mx-1" name="location" placeholder="location" id="location">
+    <button id="btnSend" type="button" class="btn btn-dark">
+      Send
+    </button>
+  </fieldset>
+</div>
+<br/>
+<div class="container">
+  <div class="row">
+      <div class="col-12 mt-2">
+          <button class="btn btn-dark" id="btnList">
+              List Products
+          </button>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-12 mt-1" id="msj">
+
+      </div>
+      <div class="col-12">
+          <div id="users">
+              <table class="table">
+                  <thead>
+                  <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody id="usersRows">                          
+                  </tbody>
+              </table>
+
+          </div>
+          <div class="mb-4 mt-4"></div>
+          <div class="mb-4 mt-4"></div>
+          <div class="mb-4 mt-4"></div>
+          <div class="mb-4 mt-4"></div>
+          <div class="mb-4 mt-4"></div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel">Put the data</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <input id="nameUpdate">
+        <input id="descriptionUpdate">
+        <input id="quantityUpdate"> 
+        <input id="priceUpdate">
+        <input id="locationUpdate">
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCloseModal">
+        Cancel
+    </button>
+    <button type="button" class="btn btn-primary" onclick="updateWarehouse()">
+        Update
+    </button>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- FOOTER -->
+ <footer class="bg-dark text-light p-4 mt-4 fixed-bottom">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-12">
+         <ul class="list-inline text-center flex-column flex-md-row">
+          <li class="list-inline-item">2024</li>
+          <li class="list-inline-item">-</li>
+          <li class="list-inline-item"><a href="#">Warehouse</a></li>
+          <li class="list-inline-item">-</li>
+          <li class="list-inline-item">Powered by<a href="https://www.linkedin.com/in/yamilhamui/" target="_blank" class="hover-footer"> YamilH</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- /FOOTER -->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+

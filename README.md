@@ -34,4 +34,4 @@ The deploy is currently not available at the moment, but here is a testing video
 
 ## Conclusion
 
-The idea behind Speaker was to create a simulated TED talk project, primarily focusing on building the backend with Java and establishing the necessary connections to make it a fullstack application where anybody can suscribe to give a talk and then an admin part where the people who have access can edit and track the susbcribers.
+With Warehouse, the idea was to create a simulated warehouse management, focusing on building the backend with Java and establishing the necessary connections to make it a fullstack application where anybody can make changes, the typical CRUD functionalities.
